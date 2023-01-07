@@ -1,10 +1,12 @@
 ## hid-sony
-Kernel module for sony playstation controllers. This code comes with [a patch](https://patchwork.kernel.org/patch/10675239/) to fix broken D-Pad for nyko core controllers.
-The patch has been submitted to linux input list but not accepted for some time, hence this repo.
+Fake PS4 controllers are not detected properly in Retropie.
+For more info check: https://retropie.org.uk/forum/topic/27359/ps4-controller-not-detected-in-retropie-4-6-on-pi-4b
+
 ## Build and install
 ```
 $ make && sudo make install
 ```
+
 ## Reload module
 ```
 # rmmod hid_sony && modprobe hid-sony
